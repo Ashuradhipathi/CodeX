@@ -114,7 +114,7 @@ def get_context(query, vector_store):
 
 def get_prompt(question, context):
     template = """
-    Your task is to answer questions by using a given context. If teh context is not relevant to the question, Use your own ability to asnwer.
+    Your task is to answer questions by using a given context. If the context is not relevant to the question, Use your own ability to asnwer.
 
     Answer in at least 350 characters.
 
