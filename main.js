@@ -1,5 +1,5 @@
 import './style.css'
-import '/workspaces/codeGen/generate.css'
+import '/workspaces/Search-/generate.css'
 
 import { process } from './env'
 import OpenAI from "openai";
