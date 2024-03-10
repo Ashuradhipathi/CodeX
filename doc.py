@@ -10,7 +10,8 @@ from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-os.environ["PINECONE_API_KEY"] = os.getenv("pinecone-api")
+os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
+os.environ["PINECONE_API_KEY"] = os.getenv("PINECONE_API_KEY")
 text_splitter = CharacterTextSplitter(chunk_size=2000, chunk_overlap=120)
 llm = ChatGoogleGenerativeAI(model="gemini-pro")
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
