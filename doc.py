@@ -9,7 +9,7 @@ import streamlit as st
 from app import llm, embeddings
 from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 
-os.environ["PINECONE_API_KEY"] = os.getenv("PINECONE_API_KEY")
+os.environ["PINECONE_API_KEY"] = os.getenv("pinecone-api")
 text_splitter = CharacterTextSplitter(chunk_size=2000, chunk_overlap=120)
 
 def inser_text(url, embeddings):
