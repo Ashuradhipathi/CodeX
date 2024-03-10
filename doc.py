@@ -10,10 +10,12 @@ from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
 
+
+
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 os.environ["PINECONE_API_KEY"] = os.getenv("PINECONE_API_KEY")
 text_splitter = CharacterTextSplitter(chunk_size=2000, chunk_overlap=120)
-llm = ChatGoogleGenerativeAI(model="gemini-pro")
+llm = ChatGoogleGenerativeAI(model="gemini-pro",convert_system_message_to_human=True)
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
 def inser_text(url, embeddings):
