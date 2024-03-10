@@ -1,4 +1,4 @@
-# codeGen
+# codex
 
 ## Inspiration
 As a geek, we always try to explore some websites for research purposes or documentation pages for understanding tools but sometimes it takes so much time just to understand the content in it so we thought if there is a companion with us who can help us with understanding stuff it would be great so we came up with this tool.
@@ -16,16 +16,13 @@ It has many features on the way that you can interact with a website or page
 - We used Open source LLM's like Gemini 
 - Used Pinecone & up stash vector databases 
     - We used them to store information which makes the tool better. The more people use this service the better it gets
-- Taipy
-    - We used Taipy to make a dashboard
-- MongoDB
-    - for storing logs and other data
 - Auth0 for authentication stuff
-- And we got a domain for ourselves by using GoDaddy
+
 
 ## Challenges we ran into
-- Made a dashboard using Taipy. Felt new as it was our first time using it
 - Integrating Vector DB felt hard but the journey was awesome
+- using gemini , llama-index was a pain
+- and godaddy's coupon code wasn't even working for us
 
 ## Accomplishments that we're proud of
 - Finally, We made an application by integrating vector DB into it
