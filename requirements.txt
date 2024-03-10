@@ -4,3 +4,4 @@ streamlit
 upstash-vector
 google-cloud-aiplatform
 exa_py
+pinecone-client

@@ -114,9 +114,8 @@ def get_context(query, vector_store):
 
 def get_prompt(question, context):
     template = """
-    Your task is to answer questions by using a given context.
+    Your task is to answer questions by using a given context. If teh context is not relevant to the question, Use your own ability to asnwer.
 
-    Don't invent anything that is outside of the context.
     Answer in at least 350 characters.
 
     %CONTEXT%
@@ -128,7 +127,6 @@ def get_prompt(question, context):
     Hint: Do not copy the context. Use your own words
     
     Answer:
-    Just return the answer and no additions like content=
     """
     prompt = template.format(question=question, context=context)
     return prompt
