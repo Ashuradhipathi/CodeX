@@ -5,4 +5,5 @@ upstash-vector
 google-cloud-aiplatform
 exa_py
 pinecone-client
--U langchain-community
+langchain-community
+beautifulsoup4
