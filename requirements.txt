@@ -1,0 +1,5 @@
+langchain-google-genai
+langchain
+streamlit
+upstash-vector
+google-cloud-aiplatform
