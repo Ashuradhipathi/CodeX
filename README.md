@@ -1,5 +1,9 @@
 # codex
 
+## To Replicate:
+- You will be needing Exa Ai API which searches over the internet for the required ursl to gain information.
+- You will also need Gemini API and OpenAI API for embedding and pushing the contents into PineCone, Upstash for which you will be needing Pinecone API and Upstash API for pushing the embeddings into the vector databases for utilizing the context in generating reponses .
+- `streamlit run doc.py` and `streamlit run app.py` for making the two streamlit apps and then you can use the rest as you would use a web app.
 ## Inspiration
 As a geek, we always try to explore some websites for research purposes or documentation pages for understanding tools but sometimes it takes so much time just to understand the content in it so we thought if there is a companion with us who can help us with understanding stuff it would be great so we came up with this tool.
 
